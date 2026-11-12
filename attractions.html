@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Attractions | Beyond Brunei</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>Beyond Brunei</h2>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Introduction -->
+        <section class="attractions-intro">
+            <h1>Explore Brunei's Attractions</h1>
+
+            <p>
+                Discover the beauty, nature and exciting
+                destinations of Brunei Darussalam.
+            </p>
+        </section>
+
+        <!-- Attraction List -->
+        <div class="attractions-list">
+
+            <!-- First Attraction: Kampong Ayer -->
+            <article class="attraction-row">
+
+                <img src="images/kampongayer.png"
+                     alt="Kampong Ayer"
+                     class="gallery-image"
+                     tabindex="0"
+                     role="button"
+                     aria-label="Enlarge Kampong Ayer photograph">
+
+                <div class="attraction-description">
+                    <h2>Kampong Ayer</h2>
+
+                    <p>
+                        Discover Brunei's historic water village
+                        and its traditional houses built above
+                        the river.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- Second Attraction: Ulu Temburong -->
+            <article class="attraction-row reverse">
+
+                <img src="images/ulutemburong.png"
+                     alt="Tropical rainforest at Ulu Temburong"
+                     class="gallery-image"
+                     tabindex="0"
+                     role="button"
+                     aria-label="Enlarge Ulu Temburong photograph">
+
+                <div class="attraction-description">
+                    <h2>Ulu Temburong</h2>
+
+                    <p>
+                        Explore Brunei's tropical rainforest
+                        and discover its rich natural environment.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- Third Attraction: Jerudong Park -->
+            <article class="attraction-row">
+
+                <img src="images/jerudongpark.png"
+                     alt="Amusement park attractions at Jerudong Park"
+                     class="gallery-image"
+                     tabindex="0"
+                     role="button"
+                     aria-label="Enlarge Jerudong Park photograph">
+
+                <div class="attraction-description">
+                    <h2>Jerudong Park</h2>
+
+                    <p>
+                        Enjoy exciting rides, recreational
+                        activities and family-friendly
+                        entertainment.
+                    </p>
+                </div>
+
+            </article>
+
+        </div> <!-- End of attraction list -->
+
+    </main>
+
+
+    <!-- Interactive Image Viewer -->
+  <div id="image-viewer"
+     role="dialog"
+     aria-modal="true"
+     aria-label="Enlarged attraction photograph">
+
+        <button id="close-image" type="button">
+            Close
+        </button>
+
+        <img id="full-image"
+             src="images/kampongayer.png"
+             alt="Enlarged attraction image">
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Beyond Brunei. All Rights Reserved.</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

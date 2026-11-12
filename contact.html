@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Beyond Brunei</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>Beyond Brunei</h2>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Contact Introduction -->
+        <section class="contact-intro">
+            <h1>Contact Us</h1>
+            <p>
+                Have questions about visiting Brunei?
+                We'd love to hear from you.
+            </p>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-section">
+
+            <h2>Send Us an Enquiry</h2>
+
+            <form id="contact-form" novalidate>
+
+                <!-- Name -->
+                <label for="name">Your Name</label>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your full name"
+                       required>
+
+                <!-- Email -->
+                <label for="email">Email Address</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email address"
+                       required>
+
+                <!-- Subject -->
+                <label for="subject">Subject</label>
+                <input type="text"
+                       id="subject"
+                       name="subject"
+                       placeholder="Enter your subject"
+                       required>
+
+                <!-- Message -->
+                <label for="message">Message</label>
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          placeholder="Write your message here..."
+                          required></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit">Send Enquiry</button>
+
+                <p id="form-status" role="status"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+   <footer class="site-footer">
+        <p>&copy; 2026 Beyond Brunei. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

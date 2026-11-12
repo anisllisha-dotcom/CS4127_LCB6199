@@ -1,0 +1,874 @@
+
+/*GENERAL WEBSITE STYLING*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/*WELCOME SECTION*/
+
+.welcome {
+    min-height: 100vh;
+
+    /* Mosque background with fade to white */
+    background-image:
+        linear-gradient(
+            to bottom,
+            transparent 70%,
+            white 100%
+        ),
+        url("images/mosque.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+/*NAVIGATION BANNER */
+
+header {
+    padding: 25px 40px;
+    overflow: hidden;
+    background-color: rgba(15, 45, 40, 0.8);
+}
+
+/* Beyond Brunei logo */
+header h2 {
+    float: left;
+    margin: 0;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+/* Navigation on the right */
+nav {
+    float: right;
+    text-align: right;
+}
+
+/* Home and Discover links */
+nav a {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/*MAIN WELCOME CONTENT*/
+
+.welcome-content {
+    width: 100%;
+    margin-top: 140px;
+    text-align: center;
+}
+
+/* Welcome text positioned on the left */
+.welcome-text {
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+    text-align: left;
+    margin-left: -40px;
+    position: relative;
+    top: -40px;
+}
+
+/* Welcome heading */
+.welcome h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 42px;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Welcome description */
+.welcome p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+/* WELCOME BUTTONS */
+
+.welcome-buttons {
+    display: inline-block;
+    width: 35%;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 70px;
+}
+
+/* Rounded buttons */
+.quick-link {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: white;
+    color: #24493c;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.quick-link:hover {
+    background-color: #e5eee9;
+}
+
+
+/*ATTRACTIONS / CONTENT SECTIONS*/
+
+.places {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+.places h2 {
+    color: #24493c;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Attraction cards */
+.place-card {
+    display: inline-block;
+    width: 280px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+/* Attraction images */
+.place-card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Attraction titles */
+.place-card h3 {
+    color: #24493c;
+    font-size: 20px;
+}
+
+/* Attraction descriptions */
+.place-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/*TABLET RESPONSIVENESS */
+
+@media screen and (max-width: 1024px) {
+
+    .welcome-content {
+        margin-top: 100px;
+    }
+    .welcome-text {
+        width: 45%;
+        margin-left: 0;
+    }
+    .welcome-buttons {
+        width: 40%;
+        margin-left: 20px;
+    }
+    .welcome h1 {
+        font-size: 36px;
+    }
+    .quick-link {
+        font-size: 18px;
+    }
+}
+
+
+/*MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+
+    /* Mobile navigation banner */
+    header {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    /* Centre Beyond Brunei */
+    header h2 {
+        float: none;
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* Move navigation underneath logo */
+    nav {
+        float: none;
+        text-align: center;
+    }
+    nav a {
+        margin: 5px;
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+
+
+    /* Mobile welcome background */
+    .welcome {
+        min-height: 100vh;
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 70px;
+    }
+
+
+    /* Remove large desktop spacing */
+    .welcome-content {
+        width: 100%;
+        margin-top: 40px;
+        padding: 0 15px;
+    }
+
+
+    /* Welcome text above buttons */
+    .welcome-text {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        position: static;
+        text-align: center;
+    }
+    .welcome h1 {
+        font-size: 32px;
+
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .welcome p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+
+    /* Buttons below welcome text */
+    .welcome-buttons {
+        display: block;
+        width: 100%;
+        margin: 25px auto;
+        position: static;
+        text-align: center;
+    }
+    .quick-link {
+        display: block;
+        width: 90%;
+        max-width: 280px;
+        margin: 15px auto;
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+
+
+    /* Content sections */
+
+    .places {
+        padding: 30px 15px;
+    }
+    .places h2 {
+        font-size: 26px;
+    }
+
+
+    /* Stack attraction cards vertically */
+
+    .place-card {
+        display: block;
+
+        width: 90%;
+        max-width: 320px;
+
+        margin: 20px auto;
+    }
+    .place-card img {
+        width: 100%;
+        height: 180px;
+
+        object-fit: cover;
+    }
+    .place-card h3 {
+        font-size: 18px;
+    }
+    .place-card p {
+        font-size: 15px;
+    }
+}
+
+
+/*SMALL MOBILE SCREENS*/
+
+@media screen and (max-width: 380px) {
+    header h2 {
+        font-size: 23px;
+    }
+    .welcome h1 {
+        font-size: 28px;
+    }
+    .welcome p {
+        font-size: 15px;
+    }
+    .quick-link {
+        font-size: 15px;
+    }
+}
+
+
+
+/* ATTRACTIONS PAGE */
+
+.attractions-intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+.attractions-intro h1 {
+    color: #24493c;
+    font-size: 36px;
+}
+.attractions-intro p {
+    color: #555;
+    font-size: 18px;
+}
+
+/* Container for all attractions */
+.attractions-list {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Image and description side by side */
+.attraction-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+/* Attraction images */
+.attraction-row img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Attraction descriptions */
+.attraction-description h2 {
+    color: #24493c;
+    font-size: 28px;
+}
+
+.attraction-description p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Alternate image position */
+.attraction-row.reverse img {
+    order: 2;
+}
+
+/* MOBILE ATTRACTIONS PAGE */
+@media screen and (max-width: 768px) {
+    .attractions-intro h1 {
+        font-size: 28px;
+    }
+
+    .attraction-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+
+    .attraction-row img {
+        height: 220px;
+    }
+
+    .attraction-row.reverse img {
+        order: 0;
+    }
+
+    .attraction-description {
+        text-align: center;
+    }
+}
+
+/* Plan Your Visit - Travel Information */
+.travel-info {
+    background-color: #f2f5f3;
+    padding: 40px 20px;
+    text-align: center;
+}
+.travel-info h2 {
+    color: #24493c;
+    font-size: 28px;
+}
+.travel-info p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.travel-info a {
+    color: #24493c;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.travel-info a:hover {
+    color: #37836a;
+}
+
+
+/* ==================================
+   DISCOVER PAGE
+================================== */
+
+/* Top banner */
+.discover-hero {
+    background-color: #d9dedb;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.discover-hero h1 {
+    color: #24493c;
+    margin: 0;
+}
+
+/* Introduction */
+.discover-intro {
+    text-align: center;
+    padding: 35px 20px 15px;
+}
+
+.discover-intro h2 {
+    color: #24493c;
+    margin: 20px 0 10px;
+}
+
+.discover-intro p {
+    max-width: 900px;
+    margin: 10px auto 25px;
+    line-height: 1.7;
+}
+
+/* Two-column layout */
+.discover-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 35px 8% 60px;
+    align-items: center;
+    background-color: white;
+}
+
+/* Left side: slideshow */
+.discover-left {
+    text-align: center;
+}
+
+.discover-left h2,
+.discover-right h2 {
+    color: #24493c;
+    margin-bottom: 15px;
+}
+
+.discover-left p,
+.discover-right p {
+    line-height: 1.7;
+}
+
+#slide-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#slide-title {
+    color: #24493c;
+    margin: 15px 0 5px;
+}
+
+#slide-description {
+    color: #555;
+    margin: 10px auto 20px;
+    line-height: 1.6;
+}
+
+/* Slideshow buttons */
+.slide-buttons button {
+    background-color: #24493c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.slide-buttons button:hover {
+    background-color: #376b59;
+}
+
+/* Right side: Events */
+.discover-right {
+    text-align: center;
+}
+
+.discover-right p {
+    margin-bottom: 20px;
+}
+
+/* Events link button */
+.discover-button {
+    display: inline-block;
+    padding: 14px 25px;
+    margin-top: 10px;
+    background-color: #24493c;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.discover-button:hover {
+    background-color: #376b59;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #24493c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* Remove default page spacing */
+body {
+    margin: 0;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+
+    .discover-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 25px 20px 50px;
+    }
+
+    .discover-hero {
+        padding: 35px 20px;
+    }
+
+    #slide-image {
+        height: 220px;
+    }
+}
+
+/* CONTACT PAGE */
+/* Contact introduction */
+.contact-intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+.contact-intro h1 {
+    color: #24493c;
+    font-size: 36px;
+}
+.contact-intro p {
+    color: #555;
+    font-size: 18px;
+}
+/* Contact form section */
+.contact-section {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px 25px 60px;
+}
+.contact-section h2 {
+    color: #24493c;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Form labels */
+.contact-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #24493c;
+}
+/* Input boxes */
+.contact-section input,
+.contact-section textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+/* Highlight selected field */
+.contact-section input:focus,
+.contact-section textarea:focus {
+    outline: 2px solid #24493c;
+    outline-offset: 2px;
+}
+/* Submit button */
+.contact-section button {
+    width: 100%;
+    padding: 14px;
+    background-color: #24493c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+/* Button hover */
+.contact-section button:hover {
+    background-color: #376b59;
+}
+/* Status message */
+#form-status {
+    text-align: center;
+    margin-top: 15px;
+    color: #24493c;
+}
+/* Mobile contact page */
+@media screen and (max-width: 768px) {
+    .contact-intro h1 {
+        font-size: 30px;
+    }
+
+    .contact-intro p {
+        font-size: 16px;
+    }
+
+    .contact-section {
+        padding: 20px 15px 40px;
+    }
+}
+
+/* External travel links */
+.external-links {
+    background-color: #f2f5f3;
+    padding: 40px 20px;
+    text-align: center;
+}
+.external-links h2 {
+    color: #24493c;
+}
+.external-links a {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    background-color: #24493c;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.external-links a:hover {
+    background-color: #376b59;
+}
+/* Interactive gallery */
+.gallery-image {
+    cursor: pointer;
+}
+.gallery-image:hover {
+    opacity: 0.85;
+}
+.gallery-image:focus-visible {
+    outline: 3px solid #24493c;
+    outline-offset: 4px;
+}
+
+/* Clickable attraction images */
+.gallery-image {
+    cursor: pointer;
+}
+
+/* Full image viewer */
+#image-viewer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Show the entire image */
+#full-image {
+    width: auto;
+    height: auto;
+    max-width: 90vw;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+/* Close button */
+#close-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #24493c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Interactive District Slideshow */
+
+.slideshow-section {
+    text-align: center;
+    padding: 20px 20px 0;
+    background-color: white;
+    .slideshow {
+    margin-bottom: 0;
+}
+
+.slideshow-section {
+    margin-bottom: 0;
+}
+
+.discover-events {
+    margin-top: 0;
+}
+}
+
+.slideshow-section h2 {
+    color: #24493c;
+}
+
+.slideshow {
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+#slide-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#slide-title {
+    color: #24493c;
+    margin: 20px 0;
+}
+
+.slide-buttons button {
+    background-color: #24493c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.slide-buttons button:hover {
+    background-color: #376b59;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    #slide-image {
+        height: 220px;
+    }
+}
+
+#slide-description {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+    max-width: 600px;
+    margin: 15px auto 25px;
+    text-align: center;
+}
+
+/* Remove default space around the page */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make footer stretch across full width */
+.site-footer {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;
+    background-color: #24493c;
+    color: white;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+}
+/* Contact form validation messages */
+
+.form-error {
+    color: #b00020;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.form-success {
+    color: #216b42;
+    font-weight: bold;
+    margin-top: 15px;
+}
